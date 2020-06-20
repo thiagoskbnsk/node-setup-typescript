@@ -1,6 +1,9 @@
-// TODO: refactor code below
+import dotenv from 'dotenv'
+
 export default (() => {
-  require('dotenv').config({
-    path: process.env.NODE_ENV === 'test' ? './env/.env.test' : './env/.env'
+  const { NODE_ENV } = process.env
+
+  dotenv.config({
+    path: NODE_ENV === 'test' ? './env/.env.test' : './env/.env'
   })
 })()

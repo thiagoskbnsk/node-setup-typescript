@@ -1,10 +1,10 @@
 import errors from '@config/errors'
 
 class IntegrationException extends Error {
-  protected code: number
-  protected error: string
+  public code: number
+  public error: string
 
-  constructor (code, message) {
+  constructor (code: number, message: string) {
     super(message)
     this.code = code
     this.error = errors[code]

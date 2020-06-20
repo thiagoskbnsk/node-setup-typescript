@@ -1,4 +1,4 @@
-import express from 'express'
+import { Router } from 'express'
 
 // controllers
 import UserController from '@controllers/UserController'
@@ -9,7 +9,7 @@ import UserValidator from '@validators/UserValidator'
 // middlewares
 import ExampleMiddleware from '@middlewares/ExampleMiddleware'
 
-const routes = express.Router()
+const routes = Router()
 
 routes.use('*', ExampleMiddleware)
 

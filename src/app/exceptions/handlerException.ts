@@ -1,4 +1,7 @@
-export default (err, _req, res, _next) => {
+import { Request, Response, NextFunction } from 'express'
+import IntegrationException from '@exceptions/IntegrationException'
+
+export default (err: IntegrationException, _req: Request, res: Response, _next: NextFunction): Response => {
   const { code, error, message } = err
 
   if (!code) {

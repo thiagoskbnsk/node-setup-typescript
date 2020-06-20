@@ -1,6 +1,4 @@
-const {
-  celebrate, Joi, Segments
-} = require('celebrate')
+import { celebrate, Joi, Segments } from 'celebrate'
 
 export default {
   show: celebrate({

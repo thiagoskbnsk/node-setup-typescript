@@ -1,5 +1,10 @@
+interface IMock {
+  name: string,
+  email: string
+}
+
 class User {
-  public mock: Array
+  public mock: IMock[]
 
   constructor () {
     this.mock = [
@@ -10,7 +15,7 @@ class User {
     ]
   }
 
-  list () {
+  list (): IMock[] {
     return this.mock
   }
 }
