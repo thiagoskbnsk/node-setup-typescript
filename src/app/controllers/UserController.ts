@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 
 import UserService from '@services/UserService'
 
-export default {
+class UserController {
   show (req: Request, res: Response): Response {
     const { userId } = req.params
 
@@ -11,3 +11,5 @@ export default {
     return res.json(users)
   }
 }
+
+export default new UserController()

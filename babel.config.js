@@ -15,7 +15,7 @@ module.exports = {
       alias: {
         '@controllers': './src/app/controllers',
         '@models': './src/app/models',
-        '@config': './src/app/config',
+        '@config': './src/config',
         '@exceptions': './src/app/exceptions',
         '@services': './src/app/services',
         '@validators': './src/app/validators',

@@ -5,7 +5,7 @@ import IntegrationException from '@exceptions/IntegrationException'
 
 import { IMock } from '@interfaces/UserMock'
 
-export default {
+class UserService {
   show (userId: number): IMock {
     const user = User.list()[userId]
 
@@ -16,3 +16,5 @@ export default {
     return user
   }
 }
+
+export default new UserService()
