@@ -1,3 +1,5 @@
 ## HOW TO: test
 
-> tests will be integrated soon!
+to run tests, execute de command below
+
+`yarn test`

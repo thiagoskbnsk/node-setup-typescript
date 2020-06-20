@@ -1,19 +1,11 @@
 ## HOW TO: run
 
-You just need to run:
+Install dependencies
 
-`$ docker-compose up -d`
+`yarn install`
 
-A server on port 3000 will be started. Just go to http://localhost:3000.
+and after, just run the command below 
 
----
+`yarn dev`
 
-To get logs from server, do:
-
-`$ docker-compose logs -f`
-
----
-
-To access the container shell
-
-`$ docker-compose run--rm web sh`
+your project will run on localhost:3000

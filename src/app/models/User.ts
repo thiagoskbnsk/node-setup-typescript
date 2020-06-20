@@ -1,7 +1,4 @@
-interface IMock {
-  name: string,
-  email: string
-}
+import { IMock } from '@interfaces/UserMock'
 
 class User {
   public mock: IMock[]
