@@ -41,7 +41,6 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "sqlite3": "^4.2.0",
     "supertest": "^4.0.2",
     "ts-jest": "^26.1.0",
     "ts-node-dev": "^1.0.0-pre.49",
