@@ -1,5 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import helmet from 'helmet'
 import cors from 'cors'
 import { errors } from 'celebrate'
 import handlerException from '@exceptions/handlerException'
@@ -19,6 +20,7 @@ class AppController {
  }
 
  middlewares (): void {
+   this.express.use(helmet())
    this.express.use(cors())
    this.express.use(bodyParser.json())
    this.express.use(bodyParser.urlencoded({ extended: false }))
