@@ -1,0 +1,28 @@
+## Architecture
+
+- `\docs`: docs folder, all the md files will be here
+- `\environments`: this folder have some global variables that our project needs
+- `\src`:
+  - `\app`: folder that contains models, controllers, helpers, services...
+    - `\controllers`: accepts input and converts it to commands for the model and returns a response
+    - `\models`: manages the data, logic and rules of the application
+    - `\services`: 
+    - `\helpers`:
+  - `\config`: config files for project like database,
+  - `\database`:
+    - `\migrations`: create, delete, modify tables in database
+    - `\seeders`: 
+    - `\index.js`: connect project and models to database
+  - `\utils`: folder that will have codes that will help the programmer to avoid redoing certain tasks
+  - `\routes`: refers to how application endpoints will respond to client requests.
+  - `app.js`: imports middlewares and routes 
+  - `server.js`: the main file, starts the app.js and server
+- `.dockerignore`: configuration file for docker to ignore some files when docker make copy of project and put in a server
+- `.editorconfig`: configuration file to indent pattern
+- `.gitignore`: configuration file for git to ignore some files when push to repository
+- `.sequelizerc`: configuration file for sequelize
+- `commitlint.config.js`: configuration file for commitlint
+- `docker-compose.yml`: configuration file for docker-compose
+- `Dockerfile`: configuration file docker
+- `package.json`: file to control packages of our project
+- `README.md`: instructions for project

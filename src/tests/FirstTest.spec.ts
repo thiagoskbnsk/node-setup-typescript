@@ -1,9 +1,7 @@
-import { User } from "@models/User";
+describe('it should be ok', () => {
+  it('asdasd', () => {
+    const user = { name: 'Thiago' }
 
-test("it should be ok", () => {
-  const user = new User();
-
-  user.name = "Thiago";
-
-  expect(user.name).toEqual("Thiago");
-});
+    expect(user.name).toEqual('Thiago')
+  })
+})
