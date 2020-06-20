@@ -1,9 +1,9 @@
-import express from 'express'
+import './utils/setEnvironment'
 
-const app = express()
+import app from './app'
 
-app.get('/', (_req, res) => {
-  return res.json({ message: 'Hello World' })
-})
+const { SERVER_PORT, SERVER_HOST } = process.env
 
-app.listen(3333)
+app.listen(SERVER_PORT, SERVER_HOST)
+
+console.log(SERVER_HOST, SERVER_PORT)

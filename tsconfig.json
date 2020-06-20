@@ -17,7 +17,11 @@
       "@controllers/*": ["./src/app/controllers/*"],
       "@models/*": ["./src/app/models/*"],
       "@views/*": ["./src/views/*"],
-      "@config/*": ["./src/config/*"]
+      "@config/*": ["./src/config/*"],
+      "@exceptions/*": ["./src/app/exceptions/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@validators/*": ["./src/app/validators/*"],
+      "@middlewares/*": ["./src/app/middlewares/*"]
     }
   },
   "include": ["src/**/*", "tests"]
